@@ -25,7 +25,7 @@ class MainHandler(webapp2.RequestHandler):
 		global total
 		global hits
 		logging.info("Reporting...")
-		self.response.write(hits/total*4)
+		self.response.write(float(hits)/total*4)
 
 
 class PostHandler(webapp2.RequestHandler):
